@@ -1,0 +1,29 @@
+.menu {
+    background-color: #e6e6e6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.menuIn {
+    display:none;
+}
+.menuIn.open {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.subMenu {
+    display: none;
+}
+.subMenu.open {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 102%;
+}
+.subMenu>.menu, .menuIn>.menu {
+    background: white;
+    border:1px solid rgba(0,0,0,0.5)
+}
